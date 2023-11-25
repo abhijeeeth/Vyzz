@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from './Hero/hero';
 import Projects from './Project/Projects';

@@ -16,7 +16,7 @@ const Hero = () => {
       <div className="container mt-16 mx-auto px-4 text-center">
         <div className="flex flex-col justify-between h-full lg:flex-col-reverse">
           <PageWrapper>
-            <h1 className="text-4xl font-semibold text-gray-800 mb-4">Viz<span className='text-red-600 font-thin'>O</span>nix</h1>
+            <h1 className="text-4xl font-semibold text-gray-800 mb-4">VizO<span className='text-red-600 font-thin'>O</span>nix</h1>
             <p className="text-gray-600 text-lg my-8">
               Web development company specializing in creating stunning and efficient websites.
             </p>
