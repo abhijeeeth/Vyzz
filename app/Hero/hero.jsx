@@ -7,7 +7,7 @@ import { PageWrapper } from '../../components/PageWrapper';
 const Hero = () => {
   return (
     <div className="bg-gray-100 py-16 bg-cover bg-fixed" style={{
-      backgroundImage: `url('https://img.freepik.com/free-photo/many-blank-business-cards_23-2147725078.jpg?w=1060&t=st=1700885856~exp=1700886456~hmac=544d74e321c7166c3f0329aa2708b30206ad9ca94051029db7798224ad90f242')`,
+      backgroundImage: `url('https://r4.wallpaperflare.com/wallpaper/483/576/977/abstract-hexagon-simple-minimalism-wallpaper-e9c0b80d31fa1dfb16c798ef2031967d.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

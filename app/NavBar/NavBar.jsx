@@ -83,6 +83,12 @@ const Navbar = () => {
               href="/"
               className="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-500"
             >
+              Services
+            </a>
+            <a
+              href="/"
+              className="block mx-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-500"
+            >
               Contact
             </a>
           </div>
