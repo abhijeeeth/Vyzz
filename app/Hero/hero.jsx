@@ -26,7 +26,7 @@ const Hero = () => {
           <Link href="/">
             <button className="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600">Get Started</button>
           </Link>
-          <Link href="/contact">
+          <Link href="/ContactUs">
             <button className="bg-gray-500/60 text-gray-900 px-4 py-2 rounded-md ml-4 hover:bg-gray-600 hover:text-white">Contact Us</button>
           </Link>
         </div>
