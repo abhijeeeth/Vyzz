@@ -5,7 +5,7 @@ import UXUIDesignService from '@/components/UXUIDesignService';
 import ServicesSection from '@/app/Service/ServicesSection';
 import WebDevelopmentService from '@/app/WebDev/WEBDevService';
 import AboutUs from './about/page';
-import VizonixPrivacyCommitment from './PrivacyService/page';
+import VizonixPrivacyCommitment from './PrivacyService/Privacy';
 import ContactForm from './ContactUs/page';
 
 
