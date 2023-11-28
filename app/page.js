@@ -5,7 +5,6 @@ import UXUIDesignService from '@/components/UXUIDesignService';
 import ServicesSection from '@/app/Service/ServicesSection';
 import WebDevelopmentService from '@/app/WebDev/WEBDevService';
 import AboutUs from './about/page';
-import VizonixPrivacyCommitment from './PrivacyService/Privacy';
 import ContactForm from './ContactUs/page';
 
 
@@ -14,7 +13,7 @@ const Home = () => {
  
 
     <div className='bg-gray-100'>
-      <Hero />
+      <Hero/>
       <VizonixPrivacyCommitment/>
       <Projects/>
       <ServicesSection/>
