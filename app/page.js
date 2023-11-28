@@ -8,19 +8,20 @@ import AboutUs from './about/page';
 import ContactForm from './ContactUs/page';
 
 
+
 const Home = () => {
   return (
  
 
     <div className='bg-gray-100'>
       <Hero/>
-      <Projects/>
+      <AboutUs/>
       <ServicesSection/>
+      <Projects/>
       <UXUIDesignService/>
       <WebDevelopmentService/>
-      <AboutUs/>
       <ContactForm/>
-      
+
     </div>
 
   );

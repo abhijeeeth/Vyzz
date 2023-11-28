@@ -1,15 +1,15 @@
 'use client';
 import { motion, AnimatePresence} from 'framer-motion'
 
-export const PageWrapper = ({children}) => (
+export const WrapperFromLeft = ({children}) => (
     <>
     <AnimatePresence>
 
     <motion.div
     initial={{opacity:0, y:30}}
     animate={{opacity:1, y:0}}
-    exit={{opacity:0, y:25}}
-    transition={{delay:.05}}
+    exit={{opacity:0, y:15}}
+    transition={{delay:.25}}
 
     >
         {children}

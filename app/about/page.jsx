@@ -2,26 +2,15 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 mx-20">
-          
-          <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-semibold text-gray-800 mb-4 text-center lg:text-justify">About Us</h2>
-            <p className="text-gray-600 text-[14px] mb-4 text-center lg:text-justify">
-              Vizonix is a leading web development company specializing in creating
-              stunning and efficient websites. Our team of experienced developers
-              and designers are dedicated to delivering high-quality web solutions.
-            </p>
-            <p className="text-gray-600 text-[14px] text-center lg:text-justify">
-              We pride ourselves on our commitment to excellence and client
-              satisfaction. Contact us today to start your web development journey
-              with Vizonix.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div className="p-16 bg-gradient-to-b from-gray-300/50  via-white to-gray-300  shadow-lg mx-16 mt-8 font-">
+    <h3 className="text-gray-700 font-bold text-3xl mb-4 text-center mx-16">Why Visonix ?</h3>
+    <h3 className="text-gray-600 font-bold text-2xl mb-4 text-center">We develop websites with client privacy at the forefront.</h3>
+    <p className="text-gray-700 leading-relaxed text-center">We adhere to strict data protection protocols and employ industry-best practices to safeguard your information. We never share or sell client data with third parties without explicit consent, and we ensure that access to your data is restricted to authorized personnel.</p>
+     
+     <h3 className="text-gray-600 font-bold text-2xl mb-4 text-center mt-8">Your Projects Remain Yours</h3>
+    <p className="text-gray-700 leading-relaxed text-center">We respect the ownership and originality of our clients' creations. We do not display client projects on our website without their express permission. Your projects are your pride, and we honor your right to control their showcase.</p>
+     
+  </div>
   );
 };
 
