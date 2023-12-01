@@ -4,10 +4,7 @@ const AboutUs = () => {
   return (
     <div className="p-16 bg-gradient-to-b from-white via-slate-100/50  to-white  drop-shadow-lg mx-16 mt-8 text-center">
       
-    <h3 className="text-gray-700 font-bold text-3xl mb-4 text-center mx-16">
-      Why Visonix ?
-      
-    </h3>
+    <h3 className="text-gray-700 font-bold text-3xl mb-4 mx-16">Why Visonix ?</h3>
     <h3 className="text-gray-600 font-bold text-2xl mb-4 text-center">We develop websites with client privacy at the forefront.</h3>
     <p className="text-gray-700 leading-relaxed text-center">We adhere to strict data protection protocols and employ industry-best practices to safeguard your information. We never share or sell client data with third parties without explicit consent, and we ensure that access to your data is restricted to authorized personnel.</p>
      
