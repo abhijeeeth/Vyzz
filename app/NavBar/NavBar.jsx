@@ -79,12 +79,13 @@ const Navbar = () => {
               About
             </p>
             </Link>
-            <a
-              href="/"
+            <Link href={'/ServiceCard'}>
+            <p
               className="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-500"
               >
               Services
-            </a>
+            </p>
+            </Link>
             <a
               href="/ContactUs"
               className="block mx-4 mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-500"
