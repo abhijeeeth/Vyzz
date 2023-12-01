@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 const AboutUs = () => {
   return (
-    <div className="p-16 bg-gradient-to-b from-gray-300/50  via-white to-gray-300  shadow-lg mx-16 mt-8 font-">
+    <div className="p-16 bg-gradient-to-b from-white via-slate-100/50  to-white  drop-shadow-lg mx-16 mt-8 text-center">
       
     <h3 className="text-gray-700 font-bold text-3xl mb-4 text-center mx-16">
-      Why <Link href='/'>Visonix</Link>  ?
+      Why Visonix ?
       
     </h3>
     <h3 className="text-gray-600 font-bold text-2xl mb-4 text-center">We develop websites with client privacy at the forefront.</h3>
