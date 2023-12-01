@@ -7,7 +7,6 @@ import WebDevelopmentService from '@/app/WebDev/WEBDevService';
 import AboutUs from './about/page';
 import ContactForm from './ContactUs/page';
 import Footer from './Footer/page';
-import NewsLetter from './NewsLetter/page';
 import Services from './ServiceCard/page';
 
 
@@ -25,7 +24,6 @@ const Home = () => {
       <UXUIDesignService/>
       <WebDevelopmentService/>
       <ContactForm/>
-      <NewsLetter/>
       <Footer/>
 
     </div>
