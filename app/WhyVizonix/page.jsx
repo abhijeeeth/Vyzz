@@ -1,7 +1,7 @@
 
 const AboutUs = () => {
   return (
-    <div className="p-16 drop-shadow-lg mx-16 mt-8 rounded-3xl text-center "style={{
+    <div className="p-16 drop-shadow-lg mx-8 mt-8 rounded-3xl text-center "style={{
       backgroundImage: `url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8211.jpg?w=1060&t=st=1701414164~exp=1701414764~hmac=0c2568c75879b376770a31b236e0e737a5b25db7c5305168bcdb46abc3776d6d')`,
       backgroundSize: 'cover',
       backgroundPosition: 'fixed',

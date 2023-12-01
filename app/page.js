@@ -4,7 +4,7 @@ import Projects from './Project/Projects';
 import UXUIDesignService from '@/components/UXUIDesignService';
 import ServicesSection from '@/app/Service/ServicesSection';
 import WebDevelopmentService from '@/app/WebDev/WEBDevService';
-import AboutUs from './about/page';
+import AboutUs from './WhyVizonix/page';
 import ContactForm from './ContactUs/page';
 import Footer from './Footer/page';
 import Services from './ServiceCard/page';
