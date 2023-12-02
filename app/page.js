@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Hero from './Hero/hero';
 import Projects from './Project/Projects';
@@ -8,6 +9,7 @@ import AboutUs from './WhyVizonix/page';
 import ContactForm from './ContactUs/page';
 import Footer from './Footer/page';
 import Services from './ServiceCard/page';
+import VerticalLinearStepper from './TimeLine/TimeLine';
 
 
 
@@ -19,6 +21,7 @@ const Home = () => {
       <Hero/>
       <AboutUs/>
       <ServicesSection/>
+      <VerticalLinearStepper/>
       <Services/>
       <Projects/>
       <UXUIDesignService/>
