@@ -17,7 +17,15 @@ const Home = () => {
   return (
  
 
-    <div className='bg-gray-100'>
+    <div className='bg-gray-100'
+    style={{
+      backgroundImage: `url('https://r4.wallpaperflare.com/wallpaper/89/177/75/artistic-minimalism-black-and-white-minimalist-wallpaper-f7ffb2049f354fba6f9214d101b13725.jpg')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      height: '800px',
+      backgroundAttachment: 'fixed', 
+    }}>
       <Hero/>
       <AboutUs/>
       <ServicesSection/>

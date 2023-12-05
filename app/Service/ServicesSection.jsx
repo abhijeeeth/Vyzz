@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServicesSection = () => {
   return (
-    <div className="container mx-auto text-center px-4 py-16 text-[14px]">
+    <div className="container mx-auto text-center px-4 py-16 text-[14px] ">
       <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Our Services</h2>
       <div className="flex flex-wrap">
         <div className="w-full md:w-1/2 lg:w-1/4 p-4">

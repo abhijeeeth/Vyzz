@@ -1,32 +1,38 @@
-import fetch from 'node-fetch';
-const { Headers } = fetch;
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import { PageWrapper } from '../../components/PageWrapper';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-br from-gray-100 via-blue-50 to-gray-100 py-16 bg-cover bg-fixed" 
-    // style={{
-    //   backgroundImage: `url('https://r4.wallpaperflare.com/wallpaper/483/576/977/abstract-hexagon-simple-minimalism-wallpaper-e9c0b80d31fa1dfb16c798ef2031967d.jpg')`,
-    //   backgroundSize: 'cover',
-    //   backgroundPosition: 'center',
-    //   backgroundRepeat: 'no-repeat',
-    //   height: '500px',
-    // }}
-    >
-      <div className="container mt-16 mx-auto px-4 text-center">
-        <div className="flex flex-col justify-between h-full lg:flex-col-reverse">
+    <div className="bg-transparent py-16 bg-cover bg-fixed">
+      <div className="container mt-16 mx-auto px-4 text-left">
+        <div className="flex ml-8 flex-col justify-between h-full lg:flex-col-reverse">
           <PageWrapper>
-            <h1 className="text-4xl font-semibold text-gray-800 mb-4">Viz<span className='text-red-600 font-thin'>O</span>nix</h1>
-            <p className="text-gray-900 font-semibold font-serif text-xl my-8">When Aesthetics Meets Technology</p>
-            <p className="text-gray-600 text-lg my-8">
-              Web development company specializing in creating stunning and efficient websites.
-            </p>
+            <h1 className="text-2xl lg:text-4xl font-semibold text-gray-800 mb-4">Viz<span className='text-red-600 font-thin'>O</span>nix</h1>
+            <h1 className="text-4xl lg:text-6xl text-gray-900 font-semibold my-8">
+              We
+              <span className="text-gray-900 font-semibold ml-2 text-xl lg:text-3xl my-8">
+                <TypeAnimation
+                  sequence={[
+                    ' Build Websites',
+                    1000,
+                    ' Design',
+                    500,
+                    ' Build Software',
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: '2em', display: 'inline-block' }}
+                  repeat={Infinity}
+                />
+              </span>
+            </h1>
           </PageWrapper>
-         
         </div>
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-start mt-10 ml-8">
           <Link href="/">
             <button className="bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-600/50">Get Started</button>
           </Link>
@@ -35,7 +41,6 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-     
     </div>
   );
 };

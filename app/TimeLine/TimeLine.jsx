@@ -22,7 +22,7 @@ const softwareDevelopmentLifecycle = [
       'Create a comprehensive design and architecture plan for the software. Define the overall structure, data flow, and the relationships between different components.',
   },
   {
-    phase: 'Implementation',
+    phase: 'Implementing',
     description: `Write code based on the design specifications. 
       Develop and integrate different modules, ensuring they work together seamlessly. 
       Test individual components during the coding process.`,
@@ -42,7 +42,7 @@ const softwareDevelopmentLifecycle = [
 
 export default function CustomizedTimeline() {
   return (
-    <div className='bg-gray-100 my-6'>
+    <div className='bg-gray-100 my-6 pt-8'>
       <h1 className='font-bold text-3xl text-center text-gray-600'>Our Process</h1>
 
     <Timeline position="alternate">
@@ -73,10 +73,10 @@ export default function CustomizedTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: '12px', px: 2 }}>
-            <Typography variant="h6" component="span" fontWeight="bold">
+            <Typography className='sm:text-sm' variant="h6" component="span" fontWeight="bold">
               {step.phase}
             </Typography>
-            <Typography>{step.description}</Typography>
+            <Typography >{step.description}</Typography>
           </TimelineContent>
         </TimelineItem>
       ))}
