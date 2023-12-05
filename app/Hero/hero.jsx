@@ -11,16 +11,16 @@ const Hero = () => {
         <div className="flex ml-8 flex-col justify-between h-full lg:flex-col-reverse">
           <PageWrapper>
             <h1 className="text-2xl lg:text-4xl font-semibold text-gray-800 mb-4">Viz<span className='text-red-600 font-thin'>O</span>nix</h1>
-            <h1 className="text-4xl lg:text-6xl text-gray-900 font-semibold my-8">
+            <h1 className="text-3xl lg:text-6xl text-gray-900 font-semibold my-8">
               We
-              <span className="text-gray-900 font-semibold ml-2 text-xl lg:text-3xl my-8">
+              <span className="text-gray-900 font-semibold ml-1 text-base lg:text-3xl my-8">
                 <TypeAnimation
                   sequence={[
-                    ' Build Websites',
+                    'Build Websites',
                     1000,
-                    ' Design',
+                    'Design',
                     500,
-                    ' Build Software',
+                    'Build Software',
                     1000,
                   ]}
                   wrapper="span"
