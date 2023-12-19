@@ -1,8 +1,7 @@
 'use client'
 import React from 'react';
 import Loading from '../PreLoader/page';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useEffect , useState } from 'react';
 
 const ContactForm = () => {
   const [isLoading, setisLoading] = useState(true)

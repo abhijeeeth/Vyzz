@@ -1,6 +1,5 @@
 'use client'
-import { useState } from 'react';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Hero from './Hero/hero';
 import Projects from './Project/Projects';
 import UXUIDesignService from '@/components/UXUIDesignService';
