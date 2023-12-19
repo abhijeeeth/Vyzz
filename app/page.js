@@ -21,7 +21,7 @@ const Home = () => {
     const fakeDataFetch = () =>{
       setTimeout(()=>{
         setisLoading(false);
-      },800);
+      },2100);
     };
     fakeDataFetch();
   },[]);
