@@ -1,5 +1,6 @@
-
-import React from 'react';
+'use client'
+import { useState } from 'react';
+import React, { useEffect } from 'react';
 import Hero from './Hero/hero';
 import Projects from './Project/Projects';
 import UXUIDesignService from '@/components/UXUIDesignService';
@@ -10,11 +11,25 @@ import ContactForm from './ContactUs/page';
 import Footer from './Footer/page';
 import Services from './ServiceCard/page';
 import VerticalLinearStepper from './TimeLine/TimeLine';
+import Loading from './PreLoader/page';
 
 
 
 const Home = () => {
-  return (
+  const [isLoading, setisLoading] = useState(true)
+  useEffect(()=>{
+    const fakeDataFetch = () =>{
+      setTimeout(()=>{
+        setisLoading(false);
+      },800);
+    };
+    fakeDataFetch();
+  },[]);
+
+
+  return isLoading ?(
+    <Loading/>
+  ) :(
  
 
     <div className='bg-gray-100'
