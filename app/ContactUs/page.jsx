@@ -1,7 +1,23 @@
+'use client'
 import React from 'react';
+import Loading from '../PreLoader/page';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 const ContactForm = () => {
-  return (
+  const [isLoading, setisLoading] = useState(true)
+  useEffect(()=>{
+    const fakeDataFetch = () =>{
+      setTimeout(()=>{
+        setisLoading(false);
+      },1000);
+    };
+    fakeDataFetch();
+  },[]);
+
+ return isLoading ?(
+    <Loading/>
+  ) :(
     <div className="bg-gray-100 rounded-lg shadow-md p-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center sm:text-4xl">Contact Us</h2>
