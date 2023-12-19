@@ -1,13 +1,14 @@
-import * as React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 
 export default function LinearBuffer() {
-  const [progress, setProgress] = React.useState(0);
-  const [buffer, setBuffer] = React.useState(10);
+  const [progress, setProgress] = useState(0);
+  const [buffer, setBuffer] = useState(10);
 
-  const progressRef = React.useRef(() => {});
-  React.useEffect(() => {
+  const progressRef = useRef(() => {});
+
+  useEffect(() => {
     progressRef.current = () => {
       if (progress > 100) {
         setProgress(0);
@@ -21,10 +22,10 @@ export default function LinearBuffer() {
     };
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
       progressRef.current();
-    }, 50); // Reduce the interval time to update faster (e.g., from 500 to 50)
+    }, 50);
 
     return () => {
       clearInterval(timer);
@@ -32,7 +33,11 @@ export default function LinearBuffer() {
   }, []);
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box
+      sx={{
+        width: '100%'
+      }}
+    >
       <LinearProgress variant="buffer" value={progress} valueBuffer={buffer} />
     </Box>
   );
