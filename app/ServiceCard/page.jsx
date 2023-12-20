@@ -1,4 +1,6 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
+import Loading from '../PreLoader/page';
 
 const services = [
   { title: 'Logo Designing', description: 'Create a unique and memorable logo that represents your brand.', imageSrc: 'https://img.freepik.com/premium-photo/ideas-creative-occupation-design_53876-61069.jpg?w=740' },
@@ -31,12 +33,25 @@ const ServicesCard = ({ title, description, imageSrc }) => {
 };
 
 const Services = () => {
-  return (
+  const [isLoading, setisLoading] = useState(true)
+  useEffect(()=>{
+    const fakeDataFetch = () =>{
+      setTimeout(()=>{
+        setisLoading(false);
+      },2100);
+    };
+    fakeDataFetch();
+  },[]);
+
+
+  return isLoading ?(
+    <Loading/>
+    ) :(
     <div className="container m-auto">
       <h1 className='text-3xl font-bold text-center my-4 text-gray-800/80'>Something We Are Good At:</h1>
-      <div className="flex flex-wrap justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 justify-center">
         {services.map((service) => (
-          <div className="w-1/2 md:w-1/3 lg:w-1/4 p-4" key={service.title}>
+          <div className="p-4" key={service.title}>
             <ServicesCard title={service.title} description={service.description} imageSrc={service.imageSrc} />
           </div>
         ))}

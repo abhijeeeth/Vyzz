@@ -11,7 +11,7 @@ export default function LinearBuffer() {
 
   useEffect(() => {
     progressRef.current = () => {
-      if (progress > 100) {
+      if (progress > 255) {
         setProgress(0);
         setBuffer(10);
       } else {

@@ -73,7 +73,7 @@ const Navbar = () => {
               >
               Home
             </a>
-            <Link href={'/about'}>
+            <Link href={'/Aboutus'}>
             <p className="block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-gray-500 mr-4"
             >
               About
