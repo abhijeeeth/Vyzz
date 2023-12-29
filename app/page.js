@@ -5,13 +5,13 @@ import Projects from './Project/Projects';
 import UXUIDesignService from '@/components/UXUIDesignService';
 import ServicesSection from '@/app/Service/ServicesSection';
 import WebDevelopmentService from '@/app/WebDev/WEBDevService';
+import WhyUs from './WhyVizonix/page';
 import AboutUs from './Aboutus/page';
 import ContactForm from './ContactUs/page';
 import Footer from './Footer/page';
 import Services from './ServiceCard/page';
 import VerticalLinearStepper from './TimeLine/TimeLine';
 import Loading from './PreLoader/page';
-import WhyUs from './WhyVizonix/page';
 
 
 
@@ -51,8 +51,7 @@ const Home = () => {
       <WebDevelopmentService/>
       <AboutUs/>
       <ContactForm/>
-      <Footer/>
-
+     
     </div>
 
   );
