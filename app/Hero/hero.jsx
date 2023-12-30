@@ -1,13 +1,29 @@
 'use client'
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import { PageWrapper } from '../../components/PageWrapper';
 import { TypeAnimation } from 'react-type-animation';
+import Animations from "../FooterLoader/page";
 
 const Hero = () => {
-  
-  
-  return (
+  const [isLoading, setisLoading] = useState(true);
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setisLoading(false);
+      }, 4000);
+    };
+    fakeDataFetch();
+  }, []);
+
+  return isLoading ? (
+    <div>
+      <Animations />
+      <Animations />
+      <Animations />
+      <Animations />
+    </div>
+  ) : (
     <div className="bg-transparent py-16 bg-cover bg-fixed">
       <div className="container mt-16 mx-auto px-4 text-left">
         <div className="flex ml-8 flex-col justify-between h-full lg:flex-col-reverse">

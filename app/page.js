@@ -25,8 +25,6 @@ const Home = () => {
     };
     fakeDataFetch();
   },[]);
-
-
   return isLoading ?(
     <Loading/>
   ) :(
@@ -51,7 +49,7 @@ const Home = () => {
       <WebDevelopmentService/>
       <AboutUs/>
       <ContactForm/>
-     
+     <Footer/>
     </div>
 
   );
