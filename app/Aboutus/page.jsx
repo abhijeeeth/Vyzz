@@ -35,11 +35,11 @@ const AboutUs = () => {
             Vizonix boasts a team of seasoned developers and designers, each bringing a wealth of expertise to the table. With a commitment to staying on the cutting edge of technology, our experts ensure that our clients benefit from the latest and most innovative solutions the industry has to offer.
             </p>
             <p className="text-gray-600 text-[16px] mb-4">
-            In the dynamic world of digital business, a strong online presence is not just advantageous – it's essential. At the forefront of this digital transformation is Vizonix, a leading web development company dedicated to crafting stunning and efficient websites that propel businesses to new heights.
+            In the dynamic world of digital business, a strong online presence is not just advantageous – its essential. At the forefront of this digital transformation is Vizonix, a leading web development company dedicated to crafting stunning and efficient websites that propel businesses to new heights.
             </p>
             
             <p className="text-gray-600 text-[16px]">
-            Recognizing the individuality of each project, Vizonix takes a personalized approach. Whether it's an e-commerce platform, a corporate website, or a custom web application, our solutions are tailored to align with your specific business goals, ensuring a perfect fit for your unique needs.
+            Recognizing the individuality of each project, Vizonix takes a personalized approach. Whether its an e-commerce platform, a corporate website, or a custom web application, our solutions are tailored to align with your specific business goals, ensuring a perfect fit for your unique needs.
             </p>
           </div>
         </div>
