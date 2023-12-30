@@ -6,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   
+  
   return (
     <div className="bg-transparent py-16 bg-cover bg-fixed">
       <div className="container mt-16 mx-auto px-4 text-left">
